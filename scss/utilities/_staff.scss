@@ -1,0 +1,60 @@
+/* ESTILOS HOJA STAFF */
+.staff h1{
+    color: $staff-titulo-color;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 1px $staff-titulo-sombra;
+    text-transform: uppercase;  
+    letter-spacing: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.staff .contenedor {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    .contenedor__carta--ana{
+        @extend %cartas;
+        background:url(../../assets/img/staff/Ana.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .contenedor__carta--nina{
+        @extend %cartas;
+        background:url(../../assets/img/staff/nina.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .contenedor__carta--fede{
+        @extend %cartas;
+        background:url(../../assets/img/staff/Fede.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .contenedor__carta--mili{
+        @extend %cartas;
+        background:url(../../assets/img/staff/mili.png) center no-repeat;
+        background-size: cover;
+    }
+    .contenedor__carta--mari{
+        @extend %cartas;
+        background:url(../../assets/img/staff/EQF_3190.jpg) center no-repeat;
+        background-size: cover;
+        margin-bottom: 60px;
+    }
+}
+
+.contenedor__carta__titulo{
+    color: $principal;
+    line-height:30px;
+    font-size: 1.7rem;
+    text-transform:uppercase;
+    letter-spacing: 5px; 
+    font-weight: bold;
+}
+.contenedor__carta__subtitulo{
+    display: block;
+    color: $secundario;
+    font-size: 1.5em;
+    margin: 5px;  
+}
+.contenedor__carta__descripcion{
+    display: none;
+}

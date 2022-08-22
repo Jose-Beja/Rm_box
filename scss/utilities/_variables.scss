@@ -1,0 +1,40 @@
+//colores
+//generales
+$principal: rgb(230,0,126);
+$secundario: rgb(25,255,129);
+
+//hoja index
+//color titulo principal
+$index-titulo-color: rgb(255, 255, 255);
+$index-titulo-sombra: rgb(0,0,0);
+
+//color subtitulo
+$index-subtitulo-color:rgba(255,255,255,1);
+
+//hoja staff
+$staff-titulo-color: rgb(185, 182, 185);
+$staff-titulo-sombra: rgb(0,0,0);
+
+//propiedades fondo.
+@mixin fondo-pantalla {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+//propiedades tarjetas staff
+%cartas {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 40vh;
+    height: 60vh;
+    margin: 5px auto;
+    color: #000000;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}

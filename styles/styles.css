@@ -1,0 +1,598 @@
+.staff .contenedor .contenedor__carta--ana, .staff .contenedor .contenedor__carta--nina, .staff .contenedor .contenedor__carta--fede, .staff .contenedor .contenedor__carta--mili, .staff .contenedor .contenedor__carta--mari {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 40vh;
+  height: 60vh;
+  margin: 5px auto;
+  color: #000000;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 20px;
+  padding-bottom: 30px; }
+
+/* estilos generales. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  * li {
+    list-style: none; }
+  * a {
+    text-decoration: none; }
+
+body {
+  background-image: url(../../assets/img/fondos/fondo-300px.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%; }
+
+/*BOTON MODO DARK*/
+.switch {
+  display: none; }
+
+/* ESTILOS HEADER GENERAL */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header img {
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 100px; }
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  header nav ul .escritorio {
+    display: none; }
+  header nav ul li {
+    list-style: none; }
+    header nav ul li a {
+      text-decoration: none;
+      display: inline-block;
+      width: 150px;
+      margin: 5px 5px;
+      padding: 2px;
+      background-color: #e6dede;
+      border: 1px solid black;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-size: 0.8rem; }
+
+/* ESTILOS FOOTER GENERAL. */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
+  footer .piepagina__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    background-color: rgba(43, 43, 43, 0.9);
+    color: white; }
+    footer .piepagina__redes a {
+      text-decoration: none;
+      color: white; }
+
+.piepagina__whatsapp {
+  position: fixed;
+  bottom: 70px;
+  right: 20px; }
+  .piepagina__whatsapp img {
+    height: 40px;
+    width: 40px;
+    opacity: 0.5s;
+    animation: pulso 2s ease-out infinite; }
+
+@keyframes pulso {
+  100% {
+    transform: scale(1.4); } }
+
+/* ESTILO HOJA INDEX*/
+.index main {
+  width: 100%;
+  height: 50vh;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "titulo" "parrafo" "subtitulo";
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 50% 20% 30%;
+  row-gap: 20px; }
+  .index main h1 {
+    grid-area: titulo;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 1px black; }
+  .index main p {
+    grid-area: parrafo;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    margin: 30px 20px; }
+  .index main h2 {
+    grid-area: subtitulo;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center; }
+
+/* ESTILOS HOJA STAFF */
+.staff h1 {
+  color: #b9b6b9;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 1px black;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.staff .contenedor {
+  display: grid;
+  width: 100%;
+  justify-content: space-around; }
+  .staff .contenedor .contenedor__carta--ana {
+    background: url(../../assets/img/staff/Ana.jpg) center no-repeat;
+    background-size: cover; }
+  .staff .contenedor .contenedor__carta--nina {
+    background: url(../../assets/img/staff/nina.jpg) center no-repeat;
+    background-size: cover; }
+  .staff .contenedor .contenedor__carta--fede {
+    background: url(../../assets/img/staff/Fede.jpg) center no-repeat;
+    background-size: cover; }
+  .staff .contenedor .contenedor__carta--mili {
+    background: url(../../assets/img/staff/mili.png) center no-repeat;
+    background-size: cover; }
+  .staff .contenedor .contenedor__carta--mari {
+    background: url(../../assets/img/staff/EQF_3190.jpg) center no-repeat;
+    background-size: cover;
+    margin-bottom: 60px; }
+
+.contenedor__carta__titulo {
+  color: #e6007e;
+  line-height: 30px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold; }
+
+.contenedor__carta__subtitulo {
+  display: block;
+  color: #19ff81;
+  font-size: 1.5em;
+  margin: 5px; }
+
+.contenedor__carta__descripcion {
+  display: none; }
+
+/* ESTILOS HOJA HORARIOS */
+.horario h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 1px black; }
+
+.horario main .tabla {
+  display: none; }
+
+.horario main .contenedor {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .horario main .contenedor .contenedor__menu li {
+    margin: 5px; }
+    .horario main .contenedor .contenedor__menu li a {
+      display: inline-block;
+      width: 100px;
+      margin: 5px;
+      padding: 5px;
+      background-color: #e6dede;
+      border: 1px solid black;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: black;
+      font-weight: bold; }
+
+.horario .contenedor__semana {
+  position: relative;
+  width: 130px;
+  height: 450px; }
+  .horario .contenedor__semana li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s; }
+    .horario .contenedor__semana li img {
+      height: 400px;
+      object-fit: contain;
+      box-shadow: 5px 5px 5px #e6007e, 10px 10px 10px #19ff81;
+      border-radius: 10px; }
+  .horario .contenedor__semana li:first-child {
+    opacity: 1; }
+  .horario .contenedor__semana li:target {
+    opacity: 1; }
+
+/* ESTILOS HOJA PROMOCIONES */
+.promociones h1 {
+  color: white;
+  margin: 10px 0 20px;
+  text-align: center;
+  text-shadow: 5px 5px 1px black; }
+
+.promociones .img {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px; }
+  .promociones .img img {
+    width: 250px; }
+
+.promociones .img__1 {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #19ff81; }
+
+.promociones .img__2 {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #e6007e; }
+
+/* media queri 600px */
+@media screen and (min-width: 600px) {
+  /* ESTILOS HEADER GENERAL */
+  body {
+    background-image: url(../../assets/img/fondos/fondo-inicio-blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%; }
+    body.dark {
+      background-image: url(../../assets/img/fondos/fondo-inicio.png); }
+  /*BOTON MODO DARK*/
+  .switch {
+    display: contents;
+    background: #6b6e77;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-left: 30px; }
+    .switch::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: #f1f1f1;
+      top: 0;
+      left: 0;
+      right: unset;
+      border-radius: 100px;
+      transition: .3s ease all;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }
+    .switch.active {
+      background: orange;
+      color: black; }
+      .switch.active::after {
+        right: 0;
+        left: unset; }
+    .switch span {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+      background: none;
+      color: #fff; }
+  header img {
+    margin-right: -10px;
+    width: 150px;
+    z-index: 2px;
+    position: relative; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 5px 5px;
+    background-color: #19ff81;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 10px; }
+    header nav ul .escritorio {
+      display: contents; }
+    header nav ul li .primera {
+      padding-left: 20px; }
+    header nav ul li a {
+      width: fit-content;
+      padding: 5px 5px;
+      margin: 0px 0px;
+      border: transparent;
+      box-shadow: none;
+      background-color: transparent;
+      border-radius: 0px; }
+    header nav ul li a:hover {
+      background-color: #e6007e; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS LOGO WHATSAPP */
+  .piepagina__whatsapp img {
+    bottom: 90px;
+    right: 50px;
+    height: 80px;
+    width: 80px; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILO HOJA INDEX*/
+  .index main {
+    height: 65vh; }
+    .index main h1 {
+      font-size: 4.5rem;
+      color: rgba(0, 0, 0, 0.5); }
+    .index main p {
+      color: black;
+      font-size: 1.5rem; }
+    .index main h2 {
+      font-size: 3rem;
+      color: rgba(0, 0, 0, 0.5); }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA STAFF */
+  .staff h1 {
+    font-size: 3rem; }
+  .staff .contenedor {
+    grid-template-areas: "ana nina" "tirri tirri" "mili mili" "mari mari";
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+  .contenedor__carta__contenido {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    background-color: rgba(119, 212, 150, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateY(190px);
+    transition: transform .25s; }
+    .contenedor__carta__contenido .contenedor__carta__titulo {
+      padding: 5px;
+      color: #e6007e;
+      line-height: 50px;
+      font-size: 1.7rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+    .contenedor__carta__contenido .contenedor__carta__subtitulo {
+      display: block;
+      font-size: 1.4em;
+      text-align: center;
+      margin-bottom: 30px; }
+    .contenedor__carta__contenido .contenedor__carta__descripcion {
+      display: contents;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity .6s; }
+  .contenedor__carta--ana {
+    grid-area: ana; }
+  .contenedor__carta--ana:hover .contenedor__carta__contenido {
+    transform: translateY(0); }
+  .contenedor__carta--ana:hover .contenedor__carta__descripcion {
+    opacity: 1;
+    transition-delay: .25s; }
+  .contenedor__carta--nina {
+    grid-area: nina; }
+  .contenedor__carta--nina:hover .contenedor__carta__contenido {
+    transform: translateY(0); }
+  .contenedor__carta--nina:hover .contenedor__carta__descripcion {
+    opacity: 1;
+    transition-delay: .25s; }
+  .contenedor__carta--fede {
+    grid-area: tirri; }
+  .contenedor__carta--fede:hover .contenedor__carta__contenido {
+    transform: translateY(0); }
+  .contenedor__carta--fede:hover .contenedor__carta__descripcion {
+    opacity: 1;
+    transition-delay: .25s; }
+  .contenedor__carta--mili {
+    grid-area: mili; }
+  .contenedor__carta--mili:hover .contenedor__carta__contenido {
+    transform: translateY(0); }
+  .contenedor__carta--mili:hover .contenedor__carta__descripcion {
+    opacity: 1;
+    transition-delay: .25s; }
+  .contenedor__carta--mari {
+    grid-area: mari; }
+  .contenedor__carta--mari:hover .contenedor__carta__contenido {
+    transform: translateY(0); }
+  .contenedor__carta--mari:hover .contenedor__carta__descripcion {
+    opacity: 1;
+    transition-delay: .25s; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA HORARIOS */
+  .horario .contenedor__menu li a {
+    margin-right: 80px; }
+  .horario .contenedor__semana {
+    margin: 30px; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA PROMOCIONES */
+  .promociones h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .promociones .img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .promociones .img img {
+      width: 400px; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA EJERCICIO */
+  .ejercicios h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 2px 2px 5px #e6007e, 5px 5px 10px #19ff81;
+    font-weight: bold;
+    letter-spacing: 6px; }
+  .ejercicios article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+  .ejercicios .tarjeta {
+    width: 300px;
+    background-color: #696767; }
+  .ejercicios h2 {
+    text-align: center;
+    color: #000000; }
+  .ejercicios p {
+    display: none; } }
+
+/* media queri 1200px */
+@media screen and (min-width: 1200px) {
+  /* ESTILOS HEADER GENERAL */
+  header img {
+    width: 200px; }
+  header nav ul {
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5); }
+  header nav ul li a {
+    padding: 10px 30px;
+    font-size: 1.5rem; }
+  /* ESTILOS FOOTER GENERAL. */
+  footer {
+    width: 100%; }
+  footer .piepagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .piepagina__redes {
+    letter-spacing: 3px;
+    font-size: 1.5rem; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS LOGO WHATSAPP */
+  .piepagina__whatsapp img {
+    bottom: 90px;
+    right: 100px;
+    height: 100px;
+    width: 100px; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILO HOJA INDEX*/
+  .index main h1 {
+    font-size: 5.5rem; }
+  .index main h2 {
+    font-size: 3rem; }
+  .index main p {
+    font-size: 1.5rem;
+    width: 650px; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA STAFF */
+  .staff h1 {
+    font-size: 4rem; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA HORARIOS */
+  .horario main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column; }
+    .horario main .titulo {
+      color: #6e6d6e;
+      text-align: center;
+      font-size: 3.5rem;
+      text-shadow: 5px 5px 1px black;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      margin-top: 30px; }
+    .horario main .tabla {
+      display: contents; }
+    .horario main table {
+      border-spacing: 20px 0px;
+      border-collapse: separate;
+      margin: 40px; }
+    .horario main .tabla__encabezado {
+      background-color: #353434;
+      text-align: center;
+      font-size: 1.7rem;
+      color: white; }
+    .horario main .tabla__cuerpo {
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold; }
+      .horario main .tabla__cuerpo table tbody td {
+        padding: 5px; }
+    .horario main .contenedor {
+      display: none; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA EJERCICIO */
+  .ejercicios h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 2px 2px 5px #e6007e, 5px 5px 10px #19ff81;
+    font-weight: bold;
+    letter-spacing: 6px; }
+  .ejercicios article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+  .ejercicios .tarjeta {
+    width: 600px;
+    background-color: #696767; }
+  .ejercicios h2 {
+    text-align: center;
+    color: #000000; }
+  .ejercicios p {
+    display: contents; }
+  .ejercicios img {
+    height: 100%;
+    border-radius: 100%; } }
+
+@media screen and (min-width: 600px) {
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILO BOTON DARK MODE*/
+  .dark body {
+    background-image: url(../../assets/img/fondos/fondo-inicio.png);
+    transition: .5s ease all; }
+  .dark .index main {
+    height: 65vh; }
+    .dark .index main h1 {
+      font-size: 4.5rem;
+      color: white; }
+    .dark .index main p {
+      color: white;
+      font-size: 1.5rem; }
+    .dark .index main h2 {
+      font-size: 3rem;
+      color: white; } }

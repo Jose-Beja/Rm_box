@@ -1,0 +1,29 @@
+/* ESTILOS HOJA PROMOCIONES */
+.promociones {
+    h1{
+        color: $index-titulo-color;
+        margin: 10px 0 20px;
+        text-align: center;
+        text-shadow: 5px 5px 1px black;
+    }
+    .img{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
+        img{
+        width: 250px;
+        }
+    }
+    .img__1{
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px $secundario;
+    }
+    .img__2{
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px $principal;
+    }
+}

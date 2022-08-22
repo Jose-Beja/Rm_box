@@ -1,0 +1,281 @@
+/* media queri 600px */
+@media screen and (min-width:600px){
+    /* ESTILOS HEADER GENERAL */
+    body{
+        background-image: url(../../assets/img/fondos/fondo-inicio-blanco.png);
+        @include fondo-pantalla;
+        &.dark{
+            background-image: url(../../assets/img/fondos/fondo-inicio.png);
+        }
+
+    }
+    
+/*BOTON MODO DARK*/
+.switch{
+    display: contents;
+    background: #6b6e77 ;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-left: 30px;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    }
+    &.active{
+        background: orange;
+        color: rgb(0, 0, 0);
+        &::after{
+            right: 0;
+            left: unset;
+        }
+    }
+
+    span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+}
+    header img{
+        margin-right: -10px;
+        width: 150px;
+        z-index: 2px;
+        position: relative;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:stretch;
+        padding: 5px 5px;
+        background-color: $secundario;
+        box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        gap: 10px;
+        .escritorio{
+            display:contents;
+        }
+        li{
+            .primera{
+                padding-left: 20px;
+            }
+            a{
+               width:fit-content;
+               padding: 5px 5px;
+               margin: 0px 0px;
+               border: transparent;
+               box-shadow: none;
+               background-color: transparent;
+               border-radius: 0px;
+           }
+           a:hover{
+               background-color: $principal;
+           }
+        } 
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS LOGO WHATSAPP */
+    .piepagina__whatsapp img{
+        bottom: 90px;
+        right: 50px;
+        height: 80px;
+        width: 80px;
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILO HOJA INDEX*/
+    .index main{
+        height: 65vh;
+        h1{
+            font-size: 4.5rem;
+            color: rgba(0, 0, 0, 0.5) ;
+        }
+        p{
+            color: rgb(0, 0, 0) ;
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.5) ;
+        }
+   }
+ /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA STAFF */
+    .staff {
+        h1{
+            font-size: 3rem;
+        }
+        .contenedor{
+            grid-template-areas: "ana nina"
+                                "tirri tirri"
+                                "mili mili"
+                                "mari mari";
+            justify-content: center;
+            align-items: center; 
+            gap: 50px                    
+        }
+    }
+    .contenedor__carta__contenido{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+        background-color: rgba(119, 212, 150, 0.5);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transform: translateY(190px);
+        transition: transform .25s;
+        .contenedor__carta__titulo{
+            padding: 5px;
+            color: $principal;
+            line-height:50px;
+            font-size: 1.7rem;
+            text-align: center;
+            text-transform:uppercase;
+            letter-spacing: 5px;
+        }
+        .contenedor__carta__subtitulo{
+            display: block;
+            font-size: 1.4em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contenedor__carta__descripcion{
+            display: contents;
+            font-size: 1em;
+            letter-spacing: 2px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .6s;
+        }
+    }
+    .contenedor__carta--ana{
+        grid-area: ana;
+    }
+    .contenedor__carta--ana:hover .contenedor__carta__contenido{
+        transform: translateY(0);
+    }
+    .contenedor__carta--ana:hover .contenedor__carta__descripcion{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+    .contenedor__carta--nina{
+        grid-area: nina;
+    }
+    .contenedor__carta--nina:hover .contenedor__carta__contenido{
+        transform: translateY(0);
+    }
+    .contenedor__carta--nina:hover .contenedor__carta__descripcion{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+    .contenedor__carta--fede{
+        grid-area: tirri;
+    }
+    .contenedor__carta--fede:hover .contenedor__carta__contenido{
+        transform: translateY(0);
+    }
+    .contenedor__carta--fede:hover .contenedor__carta__descripcion{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+    .contenedor__carta--mili{
+        grid-area: mili;
+    }
+    .contenedor__carta--mili:hover .contenedor__carta__contenido{
+        transform: translateY(0);
+    }
+    .contenedor__carta--mili:hover .contenedor__carta__descripcion{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+    .contenedor__carta--mari{
+        grid-area: mari;
+    }
+    .contenedor__carta--mari:hover .contenedor__carta__contenido{
+        transform: translateY(0);
+    }
+    .contenedor__carta--mari:hover .contenedor__carta__descripcion{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+     /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA HORARIOS */
+    .horario{
+        .contenedor__menu li a{
+            margin-right: 80px;
+        }
+        .contenedor__semana{
+        margin: 30px;
+        }
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA PROMOCIONES */
+    .promociones{
+        h1{
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 400px;
+                }
+            }
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA EJERCICIO */
+    .ejercicios {
+        h1{
+        text-align: center;
+        font-size: 3rem;
+        color: #000000;
+        text-shadow: 2px 2px 5px $principal, 5px 5px 10px $secundario;
+        font-weight: bold;
+        letter-spacing: 6px;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .tarjeta{
+            width: 300px;
+            background-color: #696767;
+        }
+        h2{
+            text-align: center;
+            color: #000000;
+        }
+        p{
+            display: none;
+        }
+    }
+}

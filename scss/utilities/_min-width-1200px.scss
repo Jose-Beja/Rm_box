@@ -1,0 +1,138 @@
+/* media queri 1200px */
+@media screen and (min-width:1200px){
+    /* ESTILOS HEADER GENERAL */
+    header img{
+        width: 200px;
+    }
+    header nav ul{
+        box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+    }
+     header nav ul li a{
+        padding: 10px 30px;
+        font-size: 1.5rem;
+    }
+    /* ESTILOS FOOTER GENERAL. */
+    footer{
+        width: 100%;
+    }
+    footer .piepagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .piepagina__redes{
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS LOGO WHATSAPP */
+    .piepagina__whatsapp img{
+        bottom: 90px;
+        right: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILO HOJA INDEX*/
+    .index {
+        main{
+            h1{
+                font-size: 5.5rem;
+            }
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+                width: 650px;
+            }   
+        }
+    }
+     /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA STAFF */
+    .staff h1{
+        font-size: 4rem;
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA HORARIOS */
+    .horario{
+        main{
+            width: 100%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            .titulo{
+                color: rgb(110, 109, 110);
+                text-align: center;
+                font-size: 3.5rem;
+                text-shadow: 5px 5px 1px black;
+                text-transform: uppercase;  
+                letter-spacing: 20px;
+                margin-top: 30px;
+            }
+            .tabla{
+                display: contents;
+            }
+            table{
+                border-spacing: 20px 0px;
+                border-collapse: separate;
+                margin: 40px;
+            }
+            .tabla__encabezado{
+                background-color: rgb(53, 52, 52);
+                text-align: center;
+                font-size: 1.7rem;
+                color: white;
+            }
+            .tabla__cuerpo{
+                background-color: rgba(0, 0, 0, 1);
+                color: white;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: bold;    
+                table tbody td{
+                    padding: 5px;
+                }
+            }  
+            .contenedor{
+                display: none;
+            } 
+        }
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA EJERCICIO */
+    .ejercicios {
+        h1{
+        text-align: center;
+        font-size: 3rem;
+        color: #000000;
+        text-shadow: 2px 2px 5px $principal, 5px 5px 10px $secundario;
+        font-weight: bold;
+        letter-spacing: 6px;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .tarjeta{
+            width: 600px;
+            background-color: #696767;
+        }
+        h2{
+            text-align: center;
+            color: #000000;
+        }
+        p{
+            display: contents;
+        }
+        
+        img{
+            height: 100%;
+            border-radius: 100%;
+        }
+    }
+
+}

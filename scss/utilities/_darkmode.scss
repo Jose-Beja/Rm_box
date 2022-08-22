@@ -1,0 +1,25 @@
+@media screen and (min-width:600px){
+/* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILO BOTON DARK MODE*/  
+    &.dark{
+      body{
+      background-image: url(../../assets/img/fondos/fondo-inicio.png);
+      transition: .5s ease all;
+    }
+    .index main{
+      height: 65vh;
+      h1{
+          font-size: 4.5rem;
+          color: $index-titulo-color ;
+      }
+      p{
+          color:$index-subtitulo-color ;
+          font-size: 1.5rem;
+      }
+      h2{
+          font-size: 3rem;
+          color:$index-subtitulo-color ;
+      }
+ }
+  }
+}

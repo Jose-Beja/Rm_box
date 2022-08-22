@@ -474,7 +474,20 @@ footer {
     text-align: center;
     color: #000000; }
   .ejercicios p {
-    display: none; } }
+    display: none; }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* ESTILOS HOJA  */
+  .imc .titulo {
+    color: #000000; }
+  .imc .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .imc .contenedor input, .imc .contenedor button {
+      background-color: #d5d5d5;
+      color: #000000; }
+  .imc h2 {
+    color: white; } }
 
 /* media queri 1200px */
 @media screen and (min-width: 1200px) {
@@ -595,4 +608,34 @@ footer {
       font-size: 1.5rem; }
     .dark .index main h2 {
       font-size: 3rem;
-      color: white; } }
+      color: white; }
+  .dark .imc h1 {
+    color: white; } }
+
+.imc h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px 0px;
+  color: white; }
+
+.imc .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .imc .contenedor input {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5); }
+  .imc .contenedor button {
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5); }
+
+.imc h2 {
+  color: white; }

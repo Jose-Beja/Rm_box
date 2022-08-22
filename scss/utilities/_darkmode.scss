@@ -8,18 +8,21 @@
     }
     .index main{
       height: 65vh;
-      h1{
-          font-size: 4.5rem;
-          color: $index-titulo-color ;
+        h1{
+            font-size: 4.5rem;
+            color: $index-titulo-color ;
+        }
+        p{
+            color:$index-subtitulo-color ;
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 3rem;
+            color:$index-subtitulo-color ;
+        }
       }
-      p{
-          color:$index-subtitulo-color ;
-          font-size: 1.5rem;
-      }
-      h2{
-          font-size: 3rem;
-          color:$index-subtitulo-color ;
-      }
- }
+    .imc h1{
+      color: $index-titulo-color ;
+    }
   }
 }

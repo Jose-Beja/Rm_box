@@ -278,4 +278,24 @@
             display: none;
         }
     }
+    /* /////////////////////////////////////////////////////////////////////////////////// */
+    /* ESTILOS HOJA  */
+    .imc{
+        .titulo{
+           color: #000000;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input, button{ 
+                background-color: #d5d5d5;
+                color: #000000;
+
+            }
+        }
+        h2{
+            color: $index-subtitulo-color;
+        }
+    }
 }

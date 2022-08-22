@@ -38,20 +38,30 @@
         <main>
             <h1 class="titulo">Iindice de Masa Corporal</h1>
             <div class="contenedor">
-                <input class="form-control" type="text" id="txtNombreUsuario" placeholder="Ingrese un nombre" name="">
+                <p>Fecha: 
+                    <input type="text" id="Fecha" placeholder="00/00/0000">
+                </p>
+                <p>Nombre: 
+                    <input type="text" id="Nombre" placeholder="Ingrese su nombre">
+                </p>
+                <p>Edad: 
+                    <input type="text" id="Edad" placeholder="Ingrese su edad">
+                </p>
+                <p>Peso: 
+                    <input type="text" id="Peso" placeholder="en Kilogramos">
+                </p>
+                <p>Estatura: 
+                    <input type="text" id="Estatura" placeholder="en Metros">
+                </p>
 
-                <input class="form-control" type="text" id="txtEdadUsuario" placeholder="Ingrese su Edad" name="">
+                <button id="calcular"> Calcular Imc </button>
 
-                <input class="form-control" type="text" id="txtPesoUsuario" placeholder="Ingrese su Peso en Kg." name="">
-
-                <input class="form-control" type="text" id="txtEstaturaUsuario" placeholder="Ingrese su Esatura en cm." name="">
-
-                <button onclick="calcularImc();"> Calcular Imc </button>
-
+                <p>Fecha: <span id="fecha"></span></p>
+                <p>Nombre: <span id="nombre"></span></p>
+                <p>Peso: <span id="peso"></span></p>
+                <p>Indice de Masa Corporal: <span id="imc"></span></p>
+                <p>Estado: <span id="estado"></span></p>
             </div>  
-            <div>
-                <h2 id="imc"></h2>
-            </div>
         </main>
         <footer>
             <div class="piepagina__redes">

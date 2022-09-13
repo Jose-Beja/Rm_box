@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nick": "La Beja",
+        "nombre": "Ana Belen Beja Rosa",
+        "edad": "28 años",
+        "altura": "1,72 mts",
+        "profecion": "Crossfit Trainer" 
+    },
+
+    {
+        "id": 2,
+        "nick": "Nina",
+        "nombre": "Micaela Sofia Abrego Merenda",
+        "edad": "36 años",
+        "altura": "1,56 mts",
+        "profecion": "Crossfit Trainer"
+    },
+
+    {
+        "id": 3,
+        "nick": "Tirri",
+        "nombre": "Federico Ferreira",
+        "edad": "24 años",
+        "altura": "1,65 mts",
+        "profecion": "Crossfit Trainer" 
+    }
+
+]
